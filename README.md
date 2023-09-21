@@ -211,7 +211,7 @@ versions 6.4 & 6.5. Indeed, [this
 commit](https://github.com/mattermost/mattermost-webapp/commit/8a925e8f95f9a8e9b81512de8203c7163c5d1eea)
 introduces a "regression" (whether this is a regression or not depends on the
 semantics of [this plugin
-interface](https://developers.mattermost.com/integrate/plugins/webapp/reference/#registerMessageWillBeUpdatedHook),
+interface](https://developers.mattermost.com/integrate/plugins/components/webapp/reference/#registerMessageWillBeUpdatedHook),
 which isn't clear), and removes posts "properties" while updating messages,
 which we use to store the actual encrypted message. That's why modifying a
 message won't work for these two versions. That being said, it won't leak the
